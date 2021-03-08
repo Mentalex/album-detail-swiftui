@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
   
   var body: some View {
-    Text("Album Detail")
+    ZStack {
+      BackgroundView()
+    }.edgesIgnoringSafeArea(.all)
   }
 }
+
+let gradient = Gradient(colors: [])
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {

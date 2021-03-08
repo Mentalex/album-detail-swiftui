@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82D41425F5DC720054D1C4 /* BackgroundView.swift */; };
 		FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6225F5CE7C004C099F /* AppDelegate.swift */; };
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
 		FACB7C6725F5CE7C004C099F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA82D41425F5DC720054D1C4 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		FACB7C5F25F5CE7C004C099F /* AlbumDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB7C6225F5CE7C004C099F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,13 +58,14 @@
 		FACB7C6125F5CE7C004C099F /* AlbumDetail */ = {
 			isa = PBXGroup;
 			children = (
-				FACB7C7725F5CFF1004C099F /* View */,
+				FACB7C7025F5CE7E004C099F /* Info.plist */,
 				FACB7C6225F5CE7C004C099F /* AppDelegate.swift */,
+				FACB7C6625F5CE7C004C099F /* ContentView.swift */,
 				FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */,
 				FACB7C6825F5CE7E004C099F /* Assets.xcassets */,
 				FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */,
-				FACB7C7025F5CE7E004C099F /* Info.plist */,
 				FACB7C6A25F5CE7E004C099F /* Preview Content */,
+				FACB7C7725F5CFF1004C099F /* Subviews */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
@@ -75,12 +78,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FACB7C7725F5CFF1004C099F /* View */ = {
+		FACB7C7725F5CFF1004C099F /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				FACB7C6625F5CE7C004C099F /* ContentView.swift */,
+				FA82D41425F5DC720054D1C4 /* BackgroundView.swift */,
 			);
-			path = View;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +158,7 @@
 			files = (
 				FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */,
 				FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */,
+				FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */,
 				FACB7C6725F5CE7C004C099F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
