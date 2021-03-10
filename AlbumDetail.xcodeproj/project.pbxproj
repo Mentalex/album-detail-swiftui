@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82D41425F5DC720054D1C4 /* BackgroundView.swift */; };
 		FA82D41C25F73E950054D1C4 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82D41B25F73E950054D1C4 /* CircleButton.swift */; };
+		FA82D41F25F897FB0054D1C4 /* CicleButtonsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82D41E25F897FB0054D1C4 /* CicleButtonsContainer.swift */; };
 		FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6225F5CE7C004C099F /* AppDelegate.swift */; };
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
 		FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		FA82D41425F5DC720054D1C4 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		FA82D41B25F73E950054D1C4 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		FA82D41E25F897FB0054D1C4 /* CicleButtonsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicleButtonsContainer.swift; sourceTree = "<group>"; };
 		FACB7C5F25F5CE7C004C099F /* AlbumDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB7C6225F5CE7C004C099F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				FA82D41425F5DC720054D1C4 /* BackgroundView.swift */,
 				FA82D41B25F73E950054D1C4 /* CircleButton.swift */,
+				FA82D41E25F897FB0054D1C4 /* CicleButtonsContainer.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				FA82D41C25F73E950054D1C4 /* CircleButton.swift in Sources */,
 				FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */,
+				FA82D41F25F897FB0054D1C4 /* CicleButtonsContainer.swift in Sources */,
 				FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */,
 				FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */,
 				FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */,
