@@ -21,7 +21,7 @@ struct CicleButtonsContainer: View {
 }
 
 struct CicleButtonsContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        CicleButtonsContainer()
-    }
+  static var previews: some View {
+    CicleButtonsContainer()
+  }
 }
