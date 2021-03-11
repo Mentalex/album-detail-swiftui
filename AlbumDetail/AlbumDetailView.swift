@@ -9,6 +9,13 @@ import SwiftUI
 
 struct AlbumDetailView: View {
   
+  init() {
+    // TODO: Remove clear color in Navigation Bar when scroll down.
+    // NOTE: Meaby needs a Cutom TopView (& Geometry Reader) and not a NavigationView.
+    UINavigationBar.appearance().barTintColor = .clear
+    UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+  }
+  
   var body: some View {
     NavigationView {
       ZStack {
@@ -19,6 +26,7 @@ struct AlbumDetailView: View {
           AlbumHeaderView()
         }
       }
+      .navigationBarTitle("", displayMode: .inline)
     }
   }
 }
