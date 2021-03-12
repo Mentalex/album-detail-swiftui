@@ -24,6 +24,7 @@ struct AlbumDetailView: View {
         
         ScrollView {
           AlbumHeaderView()
+          PlayAndShuffleButtonsContainer()
         }
       }
       .navigationBarTitle("", displayMode: .inline)
@@ -36,4 +37,3 @@ struct AlbumDetailView_Previews: PreviewProvider {
     AlbumDetailView()
   }
 }
-
