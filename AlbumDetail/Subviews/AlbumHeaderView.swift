@@ -12,9 +12,9 @@ struct AlbumHeaderView: View {
   var body: some View {
     VStack {
       Text("Random Access Memories")
-        .font(.system(size: 24, weight: .bold))
-        .foregroundColor(.white)
-        .bold()
+        .scaledToFill()
+        .font(.custom("Roboto-Black", size: 24))
+        .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
       
       HStack(alignment: .top)  {
         Image("album")
@@ -23,12 +23,14 @@ struct AlbumHeaderView: View {
         
         VStack(alignment: .leading) {
           Text("de Daft Punk")
-            .font(.system(size: 14, weight: .regular))
-            .foregroundColor(.white)
+            .scaledToFill()
+            .font(.custom("Roboto-Medium", size: 13))
+            .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
           
           Text("Álbum · 2013 · 13 canciones")
-            .font(.system(size: 14, weight: .regular))
-            .foregroundColor(.gray)
+            .scaledToFill()
+            .font(.custom("Roboto-Regular", size: 13))
+            .foregroundColor(Color(red: 179/255, green: 179/255, blue: 179/255))
             .padding(.top, 2)
           
           CicleButtonsContainer()
