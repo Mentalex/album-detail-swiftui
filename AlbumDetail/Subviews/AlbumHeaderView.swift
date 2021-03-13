@@ -46,7 +46,6 @@ struct AlbumHeaderView_Previews: PreviewProvider {
   
   static let textSizeCategories: [ContentSizeCategory] = [
     .extraSmall,
-    .medium,
     .extraExtraExtraLarge
   ]
   
@@ -66,7 +65,6 @@ struct AlbumHeaderView_Previews: PreviewProvider {
         .environment(\.sizeCategory, .extraExtraExtraLarge)
         .previewDisplayName("iPod touch - Text Size \(ContentSizeCategory.extraExtraExtraLarge)")
         
-      
       ForEach(textSizeCategories, id: \.self) { sizeCategorie in
         AlbumHeaderView()
           .environment(\.sizeCategory, sizeCategorie)
@@ -74,6 +72,9 @@ struct AlbumHeaderView_Previews: PreviewProvider {
       }
     }
     .background(Color(red: 42/255, green: 42/255, blue: 42/255))
-    .previewLayout(.device)
+    .previewLayout(.sizeThatFits)
+    
+    // TODO: Fix horizontal overflow in iPod touch and Text Size extraExtraExtraLarge
+    //.previewLayout(.device)
   }
 }
