@@ -43,7 +43,37 @@ struct AlbumHeaderView: View {
 }
 
 struct AlbumHeaderView_Previews: PreviewProvider {
+  
+  static let textSizeCategories: [ContentSizeCategory] = [
+    .extraSmall,
+    .medium,
+    .extraExtraExtraLarge
+  ]
+  
   static var previews: some View {
-    AlbumHeaderView()
+    
+    Group {
+      AlbumHeaderView()
+        .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+        .previewDisplayName("iPhone 12 Pro Max")
+      
+      AlbumHeaderView()
+        .previewDevice(PreviewDevice(rawValue: "iPod touch (7th generation)"))
+        .previewDisplayName("iPod touch")
+      
+      AlbumHeaderView()
+        .previewDevice(PreviewDevice(rawValue: "iPod touch (7th generation)"))
+        .environment(\.sizeCategory, .extraExtraExtraLarge)
+        .previewDisplayName("iPod touch - Text Size \(ContentSizeCategory.extraExtraExtraLarge)")
+        
+      
+      ForEach(textSizeCategories, id: \.self) { sizeCategorie in
+        AlbumHeaderView()
+          .environment(\.sizeCategory, sizeCategorie)
+          .previewDisplayName("Dynamic Text Size - \(sizeCategorie)")
+      }
+    }
+    .background(Color(red: 42/255, green: 42/255, blue: 42/255))
+    .previewLayout(.device)
   }
 }
