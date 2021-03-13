@@ -14,7 +14,7 @@ struct AlbumHeaderView: View {
       Text("Random Access Memories")
         .scaledToFill()
         .font(.custom("Roboto-Black", size: 24))
-        .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
+        .foregroundColor(.xEEEEEE)
       
       HStack(alignment: .top)  {
         Image("album")
@@ -25,12 +25,12 @@ struct AlbumHeaderView: View {
           Text("de Daft Punk")
             .scaledToFill()
             .font(.custom("Roboto-Medium", size: 13))
-            .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
+            .foregroundColor(.xEEEEEE)
           
           Text("Álbum · 2013 · 13 canciones")
             .scaledToFill()
             .font(.custom("Roboto-Regular", size: 13))
-            .foregroundColor(Color(red: 179/255, green: 179/255, blue: 179/255))
+            .foregroundColor(.xB3B3B3)
             .padding(.top, 2)
           
           CicleButtonsContainer()
@@ -71,7 +71,7 @@ struct AlbumHeaderView_Previews: PreviewProvider {
           .previewDisplayName("Dynamic Text Size - \(sizeCategorie)")
       }
     }
-    .background(Color(red: 42/255, green: 42/255, blue: 42/255))
+    .background(Color.x2A2A2A)
     .previewLayout(.sizeThatFits)
     
     // TODO: Fix horizontal overflow in iPod touch and Text Size extraExtraExtraLarge

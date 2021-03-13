@@ -11,11 +11,7 @@ struct BackgroundView: View {
   
   var body: some View {
     LinearGradient(
-      gradient: Gradient(
-        colors: [
-          Color(red: 50/255, green: 50/255, blue: 50/255),
-          Color(red: 16/255, green: 16/255, blue: 16/255)
-        ]),
+      gradient: Gradient(colors: [.x2A2A2A,.x080808]),
       startPoint: .top,
       endPoint: .bottom)
   }

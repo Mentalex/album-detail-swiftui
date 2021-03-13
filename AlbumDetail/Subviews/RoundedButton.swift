@@ -26,7 +26,7 @@ struct RoundedButton: View {
         Text(title).fontWeight(.semibold)
       }
     })
-    .foregroundColor(.white)
+    .foregroundColor(.xEEEEEE)
     .padding()
     .background(color)
     .cornerRadius(20)
@@ -35,6 +35,6 @@ struct RoundedButton: View {
 
 struct RoundedButton_Previews: PreviewProvider {
   static var previews: some View {
-    RoundedButton(title: "REPRODUCIR", iconName: "play.fill", color: Color.red)
+    RoundedButton(title: "REPRODUCIR", iconName: "play.fill", color: .xDE1717)
   }
 }

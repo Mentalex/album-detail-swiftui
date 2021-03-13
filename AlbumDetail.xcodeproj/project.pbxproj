@@ -25,6 +25,7 @@
 		FAB5F57B25FC5A630057EE55 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB5F56E25FC59490057EE55 /* Roboto-Bold.ttf */; };
 		FAB5F57C25FC5A630057EE55 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB5F56C25FC59490057EE55 /* Roboto-BoldItalic.ttf */; };
 		FAB5F57D25FC5A630057EE55 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB5F56925FC59490057EE55 /* Roboto-ThinItalic.ttf */; };
+		FAB5F58125FD0C910057EE55 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F58025FD0C910057EE55 /* ColorExtension.swift */; };
 		FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6225F5CE7C004C099F /* AppDelegate.swift */; };
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
 		FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */; };
@@ -52,6 +53,7 @@
 		FAB5F56F25FC59490057EE55 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		FAB5F57025FC59490057EE55 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		FAB5F57125FC594A0057EE55 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FAB5F58025FD0C910057EE55 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		FACB7C5F25F5CE7C004C099F /* AlbumDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB7C6225F5CE7C004C099F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		FAB5F57F25FD0C620057EE55 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5F58025FD0C910057EE55 /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FACB7C5625F5CE7C004C099F = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +127,10 @@
 				FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */,
 				FACB7C6825F5CE7E004C099F /* Assets.xcassets */,
 				FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */,
-				FACB7C6A25F5CE7E004C099F /* Preview Content */,
 				FAB5F56525FC58F50057EE55 /* Fonts */,
+				FACB7C6A25F5CE7E004C099F /* Preview Content */,
 				FACB7C7725F5CFF1004C099F /* Subviews */,
+				FAB5F57F25FD0C620057EE55 /* Utils */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 				FA82D42225F898740054D1C4 /* AlbumHeaderView.swift in Sources */,
 				FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */,
 				FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */,
+				FAB5F58125FD0C910057EE55 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

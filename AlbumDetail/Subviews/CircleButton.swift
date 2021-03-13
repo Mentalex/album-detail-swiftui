@@ -19,10 +19,10 @@ struct CircleButton: View {
     Button(action: {}, label: {
       Image(systemName: imageName)
         .padding(10)
-        .background(Color.black)
+        .background(Color.x1E1E1E)
         .clipShape(Circle())
         .font(.title)
-        .foregroundColor(.gray)
+        .foregroundColor(.xEEEEEE)
     })
   }
 }
