@@ -12,6 +12,9 @@ struct AlbumDetailView: View {
   var body: some View {
     NavigationView {
       ZStack {
+        BackgroundView()
+          .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
+        
         ScrollView {
           AlbumHeaderView()
           

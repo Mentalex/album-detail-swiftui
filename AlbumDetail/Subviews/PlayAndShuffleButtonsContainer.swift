@@ -17,12 +17,12 @@ struct PlayAndShuffleButtonsContainer: View {
     }
     .frame(minWidth: 0, maxWidth: .infinity)
     .padding(.all)
-    .background(Color.x2A2A2A)
   }
 }
 
 struct PlayAndShuffleButtonsContainer_Previews: PreviewProvider {
   static var previews: some View {
     PlayAndShuffleButtonsContainer()
+      .background(Color.x2A2A2A)
   }
 }
