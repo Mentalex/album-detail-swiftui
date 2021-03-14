@@ -28,6 +28,7 @@
 		FAB5F58125FD0C910057EE55 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F58025FD0C910057EE55 /* ColorExtension.swift */; };
 		FAB5F58725FD91B00057EE55 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F58625FD91B00057EE55 /* NavigationBarModifier.swift */; };
 		FAB5F58A25FD92230057EE55 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F58925FD92230057EE55 /* ViewExtension.swift */; };
+		FAB5F58D25FDC2500057EE55 /* TrackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F58C25FDC2500057EE55 /* TrackCellView.swift */; };
 		FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6225F5CE7C004C099F /* AppDelegate.swift */; };
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
 		FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */; };
@@ -58,6 +59,7 @@
 		FAB5F58025FD0C910057EE55 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		FAB5F58625FD91B00057EE55 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		FAB5F58925FD92230057EE55 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		FAB5F58C25FDC2500057EE55 /* TrackCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellView.swift; sourceTree = "<group>"; };
 		FACB7C5F25F5CE7C004C099F /* AlbumDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB7C6225F5CE7C004C099F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		FAB5F58F25FDC28E0057EE55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5F56525FC58F50057EE55 /* Fonts */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FACB7C5625F5CE7C004C099F = {
 			isa = PBXGroup;
 			children = (
@@ -140,11 +150,11 @@
 				FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */,
 				FACB7C6825F5CE7E004C099F /* Assets.xcassets */,
 				FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */,
-				FAB5F57F25FD0C620057EE55 /* Extensions */,
-				FAB5F56525FC58F50057EE55 /* Fonts */,
-				FAB5F58425FD91210057EE55 /* Modifiers */,
-				FACB7C6A25F5CE7E004C099F /* Preview Content */,
 				FACB7C7725F5CFF1004C099F /* Subviews */,
+				FAB5F58425FD91210057EE55 /* Modifiers */,
+				FAB5F57F25FD0C620057EE55 /* Extensions */,
+				FAB5F58F25FDC28E0057EE55 /* Data */,
+				FACB7C6A25F5CE7E004C099F /* Preview Content */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
@@ -166,6 +176,7 @@
 				FA82D42125F898740054D1C4 /* AlbumHeaderView.swift */,
 				FA82D42525FB1AD00054D1C4 /* RoundedButton.swift */,
 				FA82D42825FB22F60054D1C4 /* PlayAndShuffleButtonsContainer.swift */,
+				FAB5F58C25FDC2500057EE55 /* TrackCellView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				FA82D41F25F897FB0054D1C4 /* CicleButtonsContainer.swift in Sources */,
 				FA82D42925FB22F60054D1C4 /* PlayAndShuffleButtonsContainer.swift in Sources */,
 				FA82D42625FB1AD00054D1C4 /* RoundedButton.swift in Sources */,
+				FAB5F58D25FDC2500057EE55 /* TrackCellView.swift in Sources */,
 				FAB5F58A25FD92230057EE55 /* ViewExtension.swift in Sources */,
 				FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */,
 				FA82D42225F898740054D1C4 /* AlbumHeaderView.swift in Sources */,

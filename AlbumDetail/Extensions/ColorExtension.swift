@@ -27,4 +27,6 @@ extension Color {
   static let x080808 = Color(hex: 0x080808)
   static let x1E1E1E = Color(hex: 0x1E1E1E)
   static let xDE1717 = Color(hex: 0xDE1717)
+  static let x5C5C5C = Color(hex: 0x5C5C5C)
+  static let x4A4A4A = Color(hex: 0x4A4A4A)
 }
