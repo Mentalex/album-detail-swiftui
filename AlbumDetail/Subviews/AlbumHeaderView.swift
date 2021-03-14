@@ -37,8 +37,8 @@ struct AlbumHeaderView: View {
         }.padding(.leading, 4)
         
         Spacer()
-      }.padding([.leading, .trailing], 12)
-    }
+      }.padding([.leading, .trailing, .bottom], 12)
+    }.background(Color.x2A2A2A)
   }
 }
 
@@ -71,10 +71,7 @@ struct AlbumHeaderView_Previews: PreviewProvider {
           .previewDisplayName("Dynamic Text Size - \(sizeCategorie)")
       }
     }
-    .background(Color.x2A2A2A)
-    .previewLayout(.sizeThatFits)
-    
     // TODO: Fix horizontal overflow in iPod touch and Text Size extraExtraExtraLarge
-    //.previewLayout(.device)
+    .previewLayout(.device)
   }
 }

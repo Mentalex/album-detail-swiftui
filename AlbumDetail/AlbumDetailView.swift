@@ -15,7 +15,7 @@ struct AlbumDetailView: View {
         ScrollView {
           AlbumHeaderView()
           PlayAndShuffleButtonsContainer()
-        }.background(BackgroundView().edgesIgnoringSafeArea(.bottom))
+        }.background(Color.x2A2A2A.edgesIgnoringSafeArea(.all))
       }
       .navigationBarTitle("", displayMode: .inline)
       .navigationBarColor(.x2A2A2A)

@@ -17,6 +17,7 @@ struct PlayAndShuffleButtonsContainer: View {
     }
     .frame(minWidth: 0, maxWidth: .infinity)
     .padding(.all)
+    .background(Color.x2A2A2A)
   }
 }
 
