@@ -9,25 +9,16 @@ import SwiftUI
 
 struct AlbumDetailView: View {
   
-  init() {
-    // TODO: Remove clear color in Navigation Bar when scroll down.
-    // NOTE: Meaby needs a Cutom TopView (& Geometry Reader) and not a NavigationView.
-    UINavigationBar.appearance().barTintColor = .clear
-    UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-  }
-  
   var body: some View {
     NavigationView {
       ZStack {
-        BackgroundView()
-          .edgesIgnoringSafeArea(.all)
-        
         ScrollView {
           AlbumHeaderView()
           PlayAndShuffleButtonsContainer()
-        }
+        }.background(BackgroundView().edgesIgnoringSafeArea(.bottom))
       }
       .navigationBarTitle("", displayMode: .inline)
+      .navigationBarColor(.x2A2A2A)
     }
   }
 }
