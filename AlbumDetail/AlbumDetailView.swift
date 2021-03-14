@@ -14,8 +14,13 @@ struct AlbumDetailView: View {
       ZStack {
         ScrollView {
           AlbumHeaderView()
+          
           PlayAndShuffleButtonsContainer()
-        }.background(Color.x2A2A2A.edgesIgnoringSafeArea(.all))
+          
+          ForEach(Data.tracks) { track in
+            TrackCellView(track: track)
+          }
+        }
       }
       .navigationBarTitle("", displayMode: .inline)
       .navigationBarColor(.x2A2A2A)
