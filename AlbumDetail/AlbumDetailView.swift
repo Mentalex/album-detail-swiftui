@@ -11,20 +11,17 @@ struct AlbumDetailView: View {
   
   var body: some View {
     NavigationView {
-      ZStack {
-        BackgroundView()
-          .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
+      VStack {
+        AlbumHeaderView()
+        PlayAndShuffleButtonsContainer()
         
         ScrollView {
-          AlbumHeaderView()
-          
-          PlayAndShuffleButtonsContainer()
-          
           ForEach(Data.tracks) { track in
             TrackCellView(track: track)
           }
         }
       }
+      .background(BackgroundView().edgesIgnoringSafeArea(.bottom))
       .navigationBarTitle("", displayMode: .inline)
       .navigationBarColor(.x2A2A2A)
     }
