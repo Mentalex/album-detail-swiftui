@@ -32,10 +32,11 @@
 		FAB5F59225FDC4B40057EE55 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5F59125FDC4B40057EE55 /* Data.swift */; };
 		FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6225F5CE7C004C099F /* AppDelegate.swift */; };
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
-		FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */; };
+		FACB7C6725F5CE7C004C099F /* AlbumDetailView_iOS13.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView_iOS13.swift */; };
 		FACB7C6925F5CE7E004C099F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACB7C6825F5CE7E004C099F /* Assets.xcassets */; };
 		FACB7C6C25F5CE7E004C099F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACB7C6B25F5CE7E004C099F /* Preview Assets.xcassets */; };
-		FACB7C6F25F5CE7E004C099F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */; };
+		FAF8A8B1260DF10A0008650D /* AlbumDetailView_iOS14.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */; };
+		FAF8A8B5260DF19F0008650D /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,11 +66,12 @@
 		FACB7C5F25F5CE7C004C099F /* AlbumDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB7C6225F5CE7C004C099F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		FACB7C6625F5CE7C004C099F /* AlbumDetailView_iOS13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView_iOS13.swift; sourceTree = "<group>"; };
 		FACB7C6825F5CE7E004C099F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FACB7C6B25F5CE7E004C099F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FACB7C6E25F5CE7E004C099F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FACB7C7025F5CE7E004C099F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView_iOS14.swift; sourceTree = "<group>"; };
+		FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,17 +149,16 @@
 			isa = PBXGroup;
 			children = (
 				FACB7C7025F5CE7E004C099F /* Info.plist */,
-				FACB7C6625F5CE7C004C099F /* AlbumDetailView.swift */,
 				FACB7C6225F5CE7C004C099F /* AppDelegate.swift */,
 				FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */,
 				FACB7C6825F5CE7E004C099F /* Assets.xcassets */,
-				FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */,
-				FACB7C7725F5CFF1004C099F /* Subviews */,
-				FAB5F58425FD91210057EE55 /* Modifiers */,
-				FAB5F57F25FD0C620057EE55 /* Extensions */,
+				FAF8A8AD260DF0460008650D /* AlbumDetailView */,
 				FAB5F58F25FDC28E0057EE55 /* Data */,
+				FAB5F57F25FD0C620057EE55 /* Extensions */,
 				FAB5F56525FC58F50057EE55 /* Fonts */,
+				FAB5F58425FD91210057EE55 /* Modifiers */,
 				FACB7C6A25F5CE7E004C099F /* Preview Content */,
+				FACB7C7725F5CFF1004C099F /* Subviews */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
@@ -182,6 +183,16 @@
 				FAB5F58C25FDC2500057EE55 /* TrackCellView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		FAF8A8AD260DF0460008650D /* AlbumDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				FACB7C6625F5CE7C004C099F /* AlbumDetailView_iOS13.swift */,
+				FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */,
+				FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */,
+			);
+			path = AlbumDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB5F57D25FC5A630057EE55 /* Roboto-ThinItalic.ttf in Resources */,
-				FACB7C6F25F5CE7E004C099F /* LaunchScreen.storyboard in Resources */,
 				FAB5F57B25FC5A630057EE55 /* Roboto-Bold.ttf in Resources */,
 				FAB5F57525FC5A630057EE55 /* Roboto-Regular.ttf in Resources */,
 				FACB7C6C25F5CE7E004C099F /* Preview Assets.xcassets in Resources */,
@@ -274,27 +284,18 @@
 				FA82D42625FB1AD00054D1C4 /* RoundedButton.swift in Sources */,
 				FAB5F58D25FDC2500057EE55 /* TrackCellView.swift in Sources */,
 				FAB5F59225FDC4B40057EE55 /* Data.swift in Sources */,
+				FAF8A8B1260DF10A0008650D /* AlbumDetailView_iOS14.swift in Sources */,
 				FAB5F58A25FD92230057EE55 /* ViewExtension.swift in Sources */,
 				FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */,
 				FA82D42225F898740054D1C4 /* AlbumHeaderView.swift in Sources */,
 				FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */,
-				FACB7C6725F5CE7C004C099F /* AlbumDetailView.swift in Sources */,
+				FACB7C6725F5CE7C004C099F /* AlbumDetailView_iOS13.swift in Sources */,
 				FAB5F58125FD0C910057EE55 /* ColorExtension.swift in Sources */,
+				FAF8A8B5260DF19F0008650D /* AlbumDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FACB7C6D25F5CE7E004C099F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACB7C6E25F5CE7E004C099F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FACB7C7125F5CE7E004C099F /* Debug */ = {
@@ -348,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

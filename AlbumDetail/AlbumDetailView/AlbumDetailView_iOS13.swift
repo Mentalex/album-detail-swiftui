@@ -1,5 +1,5 @@
 //
-//  AlbumDetailView.swift
+//  AlbumDetailView_iOS13.swift
 //  AlbumDetail
 //
 //  Created by Alex Tapia on 07/03/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AlbumDetailView: View {
+struct AlbumDetailView_iOS13: View {
   
   /* Constants */
   private let albumDetailScrollableSpace = "AlbumDetailScrollableSpace"
@@ -82,8 +82,8 @@ struct AlbumDetailView: View {
   }
 }
 
-struct AlbumDetailView_Previews: PreviewProvider {
+struct AlbumDetailView_iOS13_Previews: PreviewProvider {
   static var previews: some View {
-    AlbumDetailView()
+    AlbumDetailView_iOS13()
   }
 }
