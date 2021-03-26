@@ -17,7 +17,6 @@ struct AlbumDetailView: View {
   @State private var headerHeight: CGFloat = 0.0
   
   var body: some View {
-    NavigationView {
       ZStack(alignment: .top) {
         VStack {
           AlbumHeaderView()
@@ -59,7 +58,6 @@ struct AlbumDetailView: View {
       .background(Color.x2A2A2A)
       .navigationBarTitle("", displayMode: .inline)
       .navigationBarColor(.x2A2A2A)
-    }
   }
   
   func topPaddingScroll() -> CGFloat {
