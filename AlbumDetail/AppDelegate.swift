@@ -6,7 +6,7 @@
 //
 
 /* NOTE: To use this go to project and set up iOS Deployment Target to 14.1 */
- import SwiftUI
+import SwiftUI
 
 @main
 struct AppWindow: App {
@@ -14,7 +14,7 @@ struct AppWindow: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        AlbumDetailView()
+        MainView()
       }
     }
   }

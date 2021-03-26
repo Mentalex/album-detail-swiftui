@@ -37,6 +37,7 @@
 		FAF8A8B1260DF10A0008650D /* AlbumDetailView_iOS14.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */; };
 		FAF8A8B5260DF19F0008650D /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */; };
 		FAF8A8BE260DFA0B0008650D /* AlbumHeaderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8BD260DFA0B0008650D /* AlbumHeaderContainerView.swift */; };
+		FAF8A8C7260E02D40008650D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8C6260E02D40008650D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView_iOS14.swift; sourceTree = "<group>"; };
 		FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		FAF8A8BD260DFA0B0008650D /* AlbumHeaderContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeaderContainerView.swift; sourceTree = "<group>"; };
+		FAF8A8C6260E02D40008650D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		FAF8A8C1260E01740008650D /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8A8C6260E02D40008650D /* MainView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB5F58725FD91B00057EE55 /* NavigationBarModifier.swift in Sources */,
+				FAF8A8C7260E02D40008650D /* MainView.swift in Sources */,
 				FA82D41C25F73E950054D1C4 /* CircleButton.swift in Sources */,
 				FACB7C6325F5CE7C004C099F /* AppDelegate.swift in Sources */,
 				FA82D41F25F897FB0054D1C4 /* CicleButtonsContainer.swift in Sources */,
