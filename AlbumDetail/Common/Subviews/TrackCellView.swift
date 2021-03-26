@@ -42,7 +42,7 @@ struct TrackCellView: View {
 
 struct TrackCellView_Previews: PreviewProvider {
   static var previews: some View {
-    TrackCellView(track: Data.tracks.first ?? Track(title: "Title", artists: "Artists"))
+    TrackCellView(track: Album.tracks.first ?? Track(title: "Title", artists: "Artists"))
       .background(Color.x2A2A2A)
       .previewLayout(.sizeThatFits)
   }

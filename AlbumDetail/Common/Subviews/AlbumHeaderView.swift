@@ -11,7 +11,7 @@ struct AlbumHeaderView: View {
   
   var body: some View {
     VStack {
-      Text("Random Access Memories")
+      Text(Album.name)
         .scaledToFill()
         .font(.custom("Roboto-Black", size: 24))
         .foregroundColor(.xEEEEEE)
@@ -22,7 +22,7 @@ struct AlbumHeaderView: View {
           .frame(width: 125, height: 125, alignment: .center)
         
         VStack(alignment: .leading) {
-          Text("de Daft Punk")
+          Text("de \(Album.artist)")
             .scaledToFill()
             .font(.custom("Roboto-Medium", size: 13))
             .foregroundColor(.xEEEEEE)

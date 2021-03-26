@@ -37,7 +37,7 @@ struct AlbumDetailView_iOS13: View {
         )
         
         ScrollView(showsIndicators: false) {
-          ForEach(Data.tracks) { track in
+          ForEach(Album.tracks) { track in
             TrackCellView(track: track)
           }
           .overlay(

@@ -13,7 +13,15 @@ struct Track: Identifiable {
   let artists: String
 }
 
-struct Data {
+struct Album {
+  
+  static var name: String {
+    return "Random Access Memories"
+  }
+  
+  static var artist: String {
+    return "Daft Punk"
+  }
   
   static var tracks: [Track] {
     return [
