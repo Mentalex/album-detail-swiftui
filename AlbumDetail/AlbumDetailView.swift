@@ -30,7 +30,8 @@ struct AlbumDetailView: View {
           // Get Header Height
           GeometryReader { proxy -> Color in
             let height = proxy.frame(in: .named(albumDetailScrollableSpace)).size.height
-            headerHeight = height
+            DispatchQueue.main.async { headerHeight = height }
+            
             return Color.clear
           }
         )
@@ -44,7 +45,7 @@ struct AlbumDetailView: View {
             GeometryReader { proxy -> Color in
               let minY = proxy.frame(in: .named(albumDetailScrollableSpace)).minY
 //              print("Offset Y: \(minY)")
-              offsetY = minY
+              DispatchQueue.main.async { offsetY = minY }
               
               // Return a view is required, just return a clear color view
               return Color.clear
@@ -80,8 +81,6 @@ struct AlbumDetailView: View {
     return padding
   }
 }
-
-
 
 struct AlbumDetailView_Previews: PreviewProvider {
   static var previews: some View {
