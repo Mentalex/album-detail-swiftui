@@ -20,8 +20,8 @@ struct AlbumDetailView_iOS14: View {
       }
     }
     .background(BackgroundView().edgesIgnoringSafeArea(.all))
-    .navigationBarTitle("Album Detail", displayMode: .automatic)
-    .navigationBarColor(.x2A2A2A) // This does not work
+    .navigationBarHidden(true)
+//    .navigationBarColor(.x2A2A2A) // This does not work
   }
 }
 

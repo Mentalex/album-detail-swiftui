@@ -152,12 +152,9 @@
 				FACB7C6225F5CE7C004C099F /* AppDelegate.swift */,
 				FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */,
 				FACB7C6825F5CE7E004C099F /* Assets.xcassets */,
-				FAF8A8AD260DF0460008650D /* AlbumDetailView */,
-				FAB5F58F25FDC28E0057EE55 /* Data */,
-				FAB5F57F25FD0C620057EE55 /* Extensions */,
-				FAB5F56525FC58F50057EE55 /* Fonts */,
-				FAB5F58425FD91210057EE55 /* Modifiers */,
-				FACB7C7725F5CFF1004C099F /* Subviews */,
+				FAF8A8C4260E01B80008650D /* Common */,
+				FAF8A8C2260E018F0008650D /* Modules */,
+				FAF8A8C5260E02070008650D /* Resources */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
@@ -185,6 +182,41 @@
 				FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */,
 			);
 			path = AlbumDetailView;
+			sourceTree = "<group>";
+		};
+		FAF8A8C1260E01740008650D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FAF8A8C2260E018F0008650D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8AD260DF0460008650D /* AlbumDetailView */,
+				FAF8A8C1260E01740008650D /* MainView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAF8A8C4260E01B80008650D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5F58F25FDC28E0057EE55 /* Data */,
+				FAB5F57F25FD0C620057EE55 /* Extensions */,
+				FAB5F58425FD91210057EE55 /* Modifiers */,
+				FACB7C7725F5CFF1004C099F /* Subviews */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAF8A8C5260E02070008650D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5F56525FC58F50057EE55 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

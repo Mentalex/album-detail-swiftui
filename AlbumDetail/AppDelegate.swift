@@ -13,7 +13,9 @@ struct AppWindow: App {
 
   var body: some Scene {
     WindowGroup {
-      AlbumDetailView()
+      NavigationView {
+        AlbumDetailView()
+      }
     }
   }
 }
