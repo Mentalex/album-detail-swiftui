@@ -34,9 +34,9 @@
 		FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */; };
 		FACB7C6725F5CE7C004C099F /* AlbumDetailView_iOS13.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB7C6625F5CE7C004C099F /* AlbumDetailView_iOS13.swift */; };
 		FACB7C6925F5CE7E004C099F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACB7C6825F5CE7E004C099F /* Assets.xcassets */; };
-		FACB7C6C25F5CE7E004C099F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACB7C6B25F5CE7E004C099F /* Preview Assets.xcassets */; };
 		FAF8A8B1260DF10A0008650D /* AlbumDetailView_iOS14.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */; };
 		FAF8A8B5260DF19F0008650D /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */; };
+		FAF8A8BE260DFA0B0008650D /* AlbumHeaderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8BD260DFA0B0008650D /* AlbumHeaderContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,10 +68,10 @@
 		FACB7C6425F5CE7C004C099F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FACB7C6625F5CE7C004C099F /* AlbumDetailView_iOS13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView_iOS13.swift; sourceTree = "<group>"; };
 		FACB7C6825F5CE7E004C099F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FACB7C6B25F5CE7E004C099F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FACB7C7025F5CE7E004C099F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF8A8B0260DF10A0008650D /* AlbumDetailView_iOS14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView_iOS14.swift; sourceTree = "<group>"; };
 		FAF8A8B4260DF19F0008650D /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		FAF8A8BD260DFA0B0008650D /* AlbumHeaderContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeaderContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,29 +157,21 @@
 				FAB5F57F25FD0C620057EE55 /* Extensions */,
 				FAB5F56525FC58F50057EE55 /* Fonts */,
 				FAB5F58425FD91210057EE55 /* Modifiers */,
-				FACB7C6A25F5CE7E004C099F /* Preview Content */,
 				FACB7C7725F5CFF1004C099F /* Subviews */,
 			);
 			path = AlbumDetail;
 			sourceTree = "<group>";
 		};
-		FACB7C6A25F5CE7E004C099F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FACB7C6B25F5CE7E004C099F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		FACB7C7725F5CFF1004C099F /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				FA82D41425F5DC720054D1C4 /* BackgroundView.swift */,
-				FA82D41B25F73E950054D1C4 /* CircleButton.swift */,
-				FA82D41E25F897FB0054D1C4 /* CicleButtonsContainer.swift */,
+				FAF8A8BD260DFA0B0008650D /* AlbumHeaderContainerView.swift */,
 				FA82D42125F898740054D1C4 /* AlbumHeaderView.swift */,
-				FA82D42525FB1AD00054D1C4 /* RoundedButton.swift */,
+				FA82D41425F5DC720054D1C4 /* BackgroundView.swift */,
+				FA82D41E25F897FB0054D1C4 /* CicleButtonsContainer.swift */,
+				FA82D41B25F73E950054D1C4 /* CircleButton.swift */,
 				FA82D42825FB22F60054D1C4 /* PlayAndShuffleButtonsContainer.swift */,
+				FA82D42525FB1AD00054D1C4 /* RoundedButton.swift */,
 				FAB5F58C25FDC2500057EE55 /* TrackCellView.swift */,
 			);
 			path = Subviews;
@@ -255,7 +247,6 @@
 				FAB5F57D25FC5A630057EE55 /* Roboto-ThinItalic.ttf in Resources */,
 				FAB5F57B25FC5A630057EE55 /* Roboto-Bold.ttf in Resources */,
 				FAB5F57525FC5A630057EE55 /* Roboto-Regular.ttf in Resources */,
-				FACB7C6C25F5CE7E004C099F /* Preview Assets.xcassets in Resources */,
 				FAB5F57425FC5A630057EE55 /* Roboto-Medium.ttf in Resources */,
 				FAB5F57325FC5A630057EE55 /* Roboto-BlackItalic.ttf in Resources */,
 				FAB5F57725FC5A630057EE55 /* Roboto-Black.ttf in Resources */,
@@ -288,6 +279,7 @@
 				FAB5F58A25FD92230057EE55 /* ViewExtension.swift in Sources */,
 				FACB7C6525F5CE7C004C099F /* SceneDelegate.swift in Sources */,
 				FA82D42225F898740054D1C4 /* AlbumHeaderView.swift in Sources */,
+				FAF8A8BE260DFA0B0008650D /* AlbumHeaderContainerView.swift in Sources */,
 				FA82D41525F5DC720054D1C4 /* BackgroundView.swift in Sources */,
 				FACB7C6725F5CE7C004C099F /* AlbumDetailView_iOS13.swift in Sources */,
 				FAB5F58125FD0C910057EE55 /* ColorExtension.swift in Sources */,
@@ -420,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AlbumDetail/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7PXGHFV974;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlbumDetail/Info.plist;
@@ -441,7 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AlbumDetail/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7PXGHFV974;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlbumDetail/Info.plist;

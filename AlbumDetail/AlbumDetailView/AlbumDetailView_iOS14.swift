@@ -10,7 +10,18 @@ import SwiftUI
 struct AlbumDetailView_iOS14: View {
   
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    ScrollView {
+      LazyVStack(pinnedViews: [.sectionHeaders]) {
+        Section(header: AlbumHeaderContainerView()) {
+          ForEach(Data.tracks) { track in
+            TrackCellView(track: track)
+          }
+        }
+      }
+    }
+    .background(BackgroundView().edgesIgnoringSafeArea(.all))
+    .navigationBarTitle("Album Detail", displayMode: .automatic)
+    .navigationBarColor(.x2A2A2A) // This does not work
   }
 }
 
