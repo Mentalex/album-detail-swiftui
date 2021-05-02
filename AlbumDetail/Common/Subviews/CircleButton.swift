@@ -17,12 +17,13 @@ struct CircleButton: View {
   
   var body: some View {
     Button(action: {}, label: {
-      Image(systemName: imageName)
-        .padding(10)
-        .background(Color.x1E1E1E)
-        .clipShape(Circle())
-        .font(.title)
-        .foregroundColor(.xEEEEEE)
+      Circle()
+        .fill(Color.x1E1E1E)
+        .overlay(
+          Image(systemName: imageName)
+            .font(.title)
+            .foregroundColor(.xEEEEEE)
+        )
     })
   }
 }
@@ -30,5 +31,6 @@ struct CircleButton: View {
 struct CircleButton_Previews: PreviewProvider {
   static var previews: some View {
     CircleButton(imageName: "heart")
+    CircleButton(imageName: "ellipsis")
   }
 }

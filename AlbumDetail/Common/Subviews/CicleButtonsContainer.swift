@@ -16,7 +16,9 @@ struct CicleButtonsContainer: View {
       CircleButton(imageName: "arrow.down")
       Spacer()
       CircleButton(imageName: "square.and.arrow.up")
-    }.padding(.top, 12)
+      Spacer()
+      CircleButton(imageName: "ellipsis")
+    }
   }
 }
 
