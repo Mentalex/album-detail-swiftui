@@ -9,12 +9,14 @@ import SwiftUI
 
 struct MainView: View {
   var body: some View {
-    List {
-      NavigationLink(destination: AlbumDetailView()){
-        Text("AlbumDetail")
-      }
-    }
-    .navigationTitle("Claro video")
+    AlbumHeaderView()
+      .background(Color.x212121)
+//    List {
+//      NavigationLink(destination: AlbumDetailView()){
+//        Text("AlbumDetail")
+//      }
+//    }
+//    .navigationTitle("Claro video")
   }
 }
 
