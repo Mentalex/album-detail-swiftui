@@ -17,34 +17,42 @@ struct AlbumHeaderView: View {
           .font(.custom("Roboto-Black", size: 24))
           .foregroundColor(.xEEEEEE)
         
-        HStack(alignment: .top)  {
-          Image("album")
-            .resizable()
-            .frame(width: 125, height: 125, alignment: .center)
+        GeometryReader { proxy in
+          let globalSize = proxy.frame(in: .global)
           
-          VStack(alignment: .leading) {
-            Text("de \(Album.artist)")
-              .scaledToFill()
-              .font(.custom("Roboto-Medium", size: 13))
-              .foregroundColor(.xEEEEEE)
+          HStack {
+            Image("album")
+              .resizable()
+              .frame(width: globalSize.width * 0.3, height: globalSize.width * 0.3)
             
-            Text("Álbum · 2013 · 13 canciones")
-              .scaledToFill()
-              .font(.custom("Roboto-Regular", size: 13))
-              .foregroundColor(.xB3B3B3)
-              .padding(.top, 2)
-            
-            CicleButtonsContainer()
-          }.padding(.leading, 4)
+            VStack(alignment: .leading) {
+              Text("de \(Album.artist)")
+                .scaledToFill()
+                .font(.custom("Roboto-Medium", size: 13))
+                .foregroundColor(.xEEEEEE)
+              
+              Text("Álbum · 2013 · 13 canciones")
+                .scaledToFill()
+                .font(.custom("Roboto-Regular", size: 13))
+                .foregroundColor(.xB3B3B3)
+                .padding(.top, 2)
+            }
+            Spacer()
+          }.overlay(
+            CicleButtonsContainer().frame(width: globalSize.width * 0.7),
+            alignment: .trailing
+          )
+//          .padding(.leading, 4)
           
-          Spacer()
-        }.padding([.leading, .trailing, .bottom], 12)
+//          Spacer()
+        }
+//        .padding([.leading, .trailing, .bottom], 12)
       }
       
       ScrollView {
         VStack {
           ForEach(0..<40) { _ in
-            Text("Hellow")
+            Text("Hello")
               .foregroundColor(.white)
               .padding()
               .frame(maxWidth: .infinity)
